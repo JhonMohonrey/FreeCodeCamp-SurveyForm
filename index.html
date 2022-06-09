@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="background"></div>
+   <div class="container">
+       <header class="header">
+           <h1 id="title">Mobile Survey Form</h1>
+           <p id="description">Your answer help us improve our product</p>
+       </header>
+       <i>Created By: Jhon Mohonrey Ramos</i>
+       <form id="survey-form">
+        <div class="form-group">
+           <div class="form">
+                <label for="name" id="name-label" class="label-names">Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name" required="" class="input-text">
+           </div>
+           <div class="form">
+               <label for="email" id="email-label" class="label-names">Email</label>
+               <input type="email" name="email" id="email" placeholder="Enter your email" required="" class="input-text">
+           </div>
+
+           <div class="form">
+               <div class="gender-container">
+                    <p class="gender">Gender</p>
+                    <label class="radio-male"><input type="radio" name="gender" value="male">Male</label>
+                    <label class="radio-female"><input type="radio" name="gender" value="female">Female</label>
+               </div>
+            </div>
+
+           <div class="form">
+               <label for="number" id="number-label" class="label-names">Age</label>
+               <input type="number" name="age" id="number" min="12" max="100" placeholder="Age">
+           </div>
+         </div>
+
+         <div class="form-group">
+            <div class="form">
+                <p class="dropdown-p">Witch brand do you use?</p>
+                <select name="role" id="dropdown" required="">
+                    <option value="" disabled="" selected="">Select</option>
+                    <option value="Samsung">Samsung</option>
+                    <option value="Nokia">Nokia</option>
+                    <option value="Motorola">Motorola</option>
+                    <option value="LG">LG</option>
+                    <option value="SonyEricsson">Sony Ericsson</option>
+                </select>
+            </div>
+
+            <div class="form">
+                <p class="promotional">Witch promotional offer attracts you?</p>
+                <label class="promo"><input type="radio" name="recommend" value="freeGifts">Free Gifts</label>
+                <label class="promo"><input type="radio" name="recommend" value="priceOffer">Price Offer</label>
+                <label class="promo"><input type="radio" name="recommend" value="Discount">Discount</label>
+                <label class="promo"><input type="radio" name="recommend" value="Other">Other</label>
+            </div>
+
+            <div class="form">
+                <p class="purchase">How frequently do you purchase mobile?</p>
+                <select name="role" id="dropdown" required="">
+                    <option value="" disabled="" selected="">Select</option>
+                    <option value="Yearly">Yearly</option>
+                    <option value="TwiceAYear">Twice a year</option>
+                </select>
+            </div>
+
+            <div class="form">
+                <p class="factor">Witch of these following factor affect your purchase?<span>( Check all that apply )</Check></span></p>
+                <label class="check"><input type="checkbox" name="prefer" value="price">Price</label>
+                <label class="check"><input type="checkbox" name="prefer" value="brand">Brand</label>
+                <label class="check"><input type="checkbox" name="prefer" value="color">color</label>
+                <label class="check"><input type="checkbox" name="prefer" value="Shape">Shape</label>
+                <label class="check"><input type="checkbox" name="prefer" value="design">Design</label>
+                <label class="check"><input type="checkbox" name="prefer" value="quality">Quality</label>
+                <label class="check"><input type="checkbox" name="prefer" value="features">Features</label>
+            </div>
+
+            <div class="form">
+                <p class="comment">Comments or suggestions?</p>
+                <textarea name="comment" id="comments" cols="30" rows="10" placeholder="Enter your comments here ..."></textarea>
+            </div>
+
+            <div class="form">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+         </div>
+       </form>
+   </div>
+</body>
+</html>

@@ -1,0 +1,226 @@
+:root {
+  --outline-color: rgb(1, 71, 86);
+  --body-background-color: rgba(0, 251, 255, 0.553);
+  --form-color: rgba(63, 194, 230, 0.733);
+  --button-color:rgb(255, 255, 255);
+  --form-hover-color: rgb(0, 177, 226);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+i {
+  position: fixed;
+  bottom: 10px;
+  left: 20px;
+}
+
+.background {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(115deg, rgba(0, 187, 255, 0.618), rgba(171, 226, 255, 0.624)), url(https://gizchina.it/wp-content/uploads/2021/04/Xiaomi-miui-12-picture-in-picture-youtube.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  inset: 0;
+  opacity: .7;
+  z-index: -1;
+}
+
+.container {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.header #title {
+  font-family: arial;
+  text-align: center;
+  margin: 30px 0 10px 0;
+}
+
+.header #description {
+  font-family: arial;
+  text-align: center;
+  margin: 0 0 1px 0;
+}
+
+#survey-form {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.form-group {
+  background: var(--form-color);
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 1px 1px 10px black;
+          box-shadow: 1px 1px 10px black;
+  margin: 10px 0 30px 0;
+}
+
+.form {
+  margin: 15px 0;
+}
+
+.form p {
+  font-family: arial;
+}
+
+.form .label-names {
+  display: block;
+  font-family: arial;
+  margin-bottom: 5px;
+}
+
+.form .input-text {
+  width: 98.5%;
+  padding: 10px 4px;
+  border: none;
+  margin-top: 2px;
+  border-radius: 5px;
+}
+
+.form .input-text:focus {
+  outline: 2px solid var(--outline-color);
+}
+
+.form .gender-container {
+  background: white;
+  border-radius: 5px;
+}
+
+.form .gender-container .gender {
+  margin: 10px 5px;
+  display: inline-block;
+  padding-right: 10px;
+  border-right: 1px solid black;
+}
+
+.form .gender-container .radio-male, .form .gender-container .radio-female {
+  font-family: arial;
+  cursor: pointer;
+}
+
+.form .gender-container:hover {
+  outline: 2px solid var(--outline-color);
+}
+
+.form #number-label {
+  display: inline-block;
+  margin: 5px 5px 0 0;
+}
+
+.form #number {
+  width: 40px;
+  border: none;
+  padding: 3px 2px;
+  border-radius: 5px;
+}
+
+.form #number:hover {
+  outline: 2px solid var(--outline-color);
+}
+
+.form .dropdown-p {
+  margin: 0 0 5px 0;
+}
+
+.form #dropdown {
+  width: 100%;
+  padding: 8px 3px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form #dropdown:focus {
+  outline: 2px solid var(--outline-color);
+}
+
+.form .promotional {
+  margin: 30px 0 5px 0;
+}
+
+.form .promo {
+  display: block;
+  font-family: arial;
+  margin: 5px 0;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.form .promo:hover {
+  background: var(--form-hover-color);
+}
+
+.form .promo input {
+  width: 10px;
+  cursor: pointer;
+}
+
+.form .purchase {
+  margin: 30px 0 10px 0;
+}
+
+.form .factor {
+  margin: 40px 0 10px 0;
+}
+
+.form .factor span {
+  font-size: 12px;
+  margin: 0 5px;
+  opacity: .7;
+}
+
+.form .check {
+  display: block;
+  padding: 10px 0;
+  font-family: arial;
+}
+
+.form .check input {
+  margin: 0 5px;
+}
+
+.form .check:hover {
+  background: var(--form-hover-color);
+}
+
+.form .comment {
+  margin: 40px 0 10px 0;
+}
+
+.form #comments {
+  resize: none;
+  width: 98.5%;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.form #comments:focus {
+  outline: 2px solid var(--outline-color);
+}
+
+.form #submit {
+  width: 100%;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: var(--button-color);
+}
+
+.form #submit:hover {
+  -webkit-box-shadow: 1px 1px 10px var(--form-hover-color);
+          box-shadow: 1px 1px 10px var(--form-hover-color);
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background: black;
+}
+/*# sourceMappingURL=design.css.map */
